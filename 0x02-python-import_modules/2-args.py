@@ -2,8 +2,11 @@
 import sys
 
 num = len(sys.argv) - 1
+
 if __name__ == "__main__":
-    "Print the number of and list of its arguments."
+    ""
+    Print the number of and list of its arguments.
+    ""
 
     if num == 0:
         print("0 arguments.")
