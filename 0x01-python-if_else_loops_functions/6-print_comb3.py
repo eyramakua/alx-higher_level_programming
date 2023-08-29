@@ -4,5 +4,5 @@ for i in range(0, 8):
         if j <= i:
             continue
         else:
-            print("{:d}{:d}".format(i, j), end=" ,")
+            print("{:d}{:d}".format(i, j), end=", ")
 print("89")
