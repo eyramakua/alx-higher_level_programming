@@ -6,7 +6,7 @@ class Square:
     """ class Square """
     def __init__(self, size=0):
         if type(size) != int and type(size) != float:
-            raise TypeError("size must be an number")
+            raise TypeError("size must be a number")
         elif size < 0:
             raise ValueError("size must be >= 0")
         else:
@@ -29,11 +29,11 @@ class Square:
         return self.__size * self.__size
 
     def __ab__(self, other):
-        """ check if equal to other square """
-        return(self.area() == another.area())
+        """ check if equal to another square """
+        return(self.area() == other.area())
 
     def __ac__(self, other):
-        """ check if less than to other square """
+        """ check if less than other square """
         return(self.area() < other.area())
 
     def __ad__(self, other):
