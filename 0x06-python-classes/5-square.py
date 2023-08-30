@@ -30,7 +30,7 @@ class Square:
 
     def my_print(self):
         if self.__size == 0:
-            print(' ')
+            print('')
         for s in range(self.__size):
             for os in range(self.__size):
                 print('#', end='')
