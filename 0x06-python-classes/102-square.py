@@ -28,26 +28,26 @@ class Square:
     def area(self):
         return self.__size * self.__size
 
-    def __ab__(self, other):
+    def __eq__(self, other):
         """ check if equal to another square """
         return(self.area() == other.area())
 
-    def __ac__(self, other):
+    def __lt__(self, other):
         """ check if less than other square """
         return(self.area() < other.area())
 
-    def __ad__(self, other):
+    def __le__(self, other):
         """ check if less than or equal to other square """
         return(self.area() <= other.area())
 
-    def __ae__(self, other):
+    def __nt__(self, other):
         """ check if not equal to another square """
         return(self.area() != other.area())
 
-    def __af__(self, other):
+    def __gt__(self, other):
         """ check if greater than another square """
         return(self.area() > other.area())
 
-    def __ag__(self, other):
+    def __ge__(self, other):
         """ check if greater than or equal to another square """
         return(self.area() >= other.area())
