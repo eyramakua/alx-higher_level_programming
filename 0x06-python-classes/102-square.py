@@ -5,8 +5,8 @@
 class Square:
     """ class Square """
     def __init__(self, size=0):
-        if type(size) != int:
-            raise TypeError("size must be an integer")
+        if type(size) != int and type(size) != float:
+            raise TypeError("size must be an number")
         elif size < 0:
             raise ValueError("size must be >= 0")
         else:
@@ -18,8 +18,8 @@ class Square:
 
     @size.setter
     def size(self, value):
-        if type(value) != int:
-            raise TypeError("size must be an integer")
+        if type(value) != int and type(value) != float:
+            raise TypeError("size must be a number")
         elif value < 0:
             raise ValueError("size must be >= 0")
         else:
