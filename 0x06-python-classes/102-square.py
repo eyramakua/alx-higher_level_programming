@@ -30,7 +30,7 @@ class Square:
 
     def __ab__(self, other):
         """ check if equal to other square """
-        return(self.area() == other.area())
+        return(self.area() == another.area())
 
     def __ac__(self, other):
         """ check if less than to other square """
@@ -41,13 +41,13 @@ class Square:
         return(self.area() <= other.area())
 
     def __ae__(self, other):
-        """ check if not equal to other square """
+        """ check if not equal to another square """
         return(self.area() != other.area())
 
     def __af__(self, other):
-        """ check if greater than other square """
+        """ check if greater than another square """
         return(self.area() > other.area())
 
     def __ag__(self, other):
-        """ check if greater than or equal to other square """
+        """ check if greater than or equal to another square """
         return(self.area() >= other.area())
