@@ -3,4 +3,5 @@
 
 
 class Square:
+    """ empty class for first task """
     pass
