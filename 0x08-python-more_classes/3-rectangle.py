@@ -54,4 +54,4 @@ class Rectangle:
             for c in range(self.__width):
                 string = string + '#'
             string = string + '\n'
-        return string[:1]
+        return string[:-1]
