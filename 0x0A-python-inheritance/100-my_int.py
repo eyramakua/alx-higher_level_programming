@@ -8,8 +8,8 @@ module for MyInt
 class MyInt(int):
     """MyInt class"""
 
-    def __ab__(self, other):
-        return super().__ac__(other)
+    def __ne__(self, other):
+        return super().__eq__(other)
 
-    def __ac__(self, other):
-        return super().__ab__(other)
+    def __eq__(self, other):
+        return super().__ne__(other)
