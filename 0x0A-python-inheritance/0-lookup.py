@@ -1,10 +1,9 @@
 #!/usr/bin/python3
-
 """
 Module for lookup
 """
 
 
-def lookuo(obj):
+def lookup(obj):
     """Return the attribute"""
     return dir(obj)
