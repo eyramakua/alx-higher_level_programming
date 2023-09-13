@@ -14,9 +14,9 @@ class Student:
         self.age = age
 
     def to_json(self, attrs=None):
-        '''Retrieves dictonary representation'''
+        '''Retrieves dictonary to JSON'''
         if attrs is not None and all(isinstance(item, str) for item in attrs):
-            ret = {)
+            ret = {}
             for h, j in self.__dict__.items():
                 if h in attrs:
                     ret[h] = j
