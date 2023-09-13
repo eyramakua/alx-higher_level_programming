@@ -2,9 +2,10 @@
 """
 A JSON module representation
 """
+
 import json
 
 
 def to_json_string(my_obj):
     """Return JSON representation"""
-    return json.dumps(obj)
+    return json.dumps(my_obj)
