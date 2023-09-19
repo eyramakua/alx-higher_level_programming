@@ -19,33 +19,33 @@ class Rectangle(Base):
         self.y = y
 
     @property
-    def width(self):
+    def width(self) -> int:
         return self.__width
 
     @width.setter
-    def width(self, value):
-        self.__width = value
+    def width(self, width: int):
+        self.__width = width
 
     @property
-    def height(self):
+    def height(self) -> int:
         return self.__height
 
     @height.setter
-    def (self, value):
+    def (self, height: int):
         return self.__height
 
     @property
-    def x(self):
+    def x(self) -> int:
         return self.__x
 
     @x.setter
-    def x(self, value):
-        self.__x = value
+    def x(self, x: int):
+        self.__x = x
 
     @property
-    def y(self):
+    def y(self) -> int:
         return self.__y
 
     @y.setter
-    def y(self, value):
-        self.__y = value
+    def y(self, y: int):
+        self.__y = y
