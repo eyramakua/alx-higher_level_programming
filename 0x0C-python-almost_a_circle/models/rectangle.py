@@ -18,6 +18,12 @@ class Rectangle(Base):
         self.x = x
         self.y = y
 
+    def __str__(self) -> str:
+        '''string rep'''
+        return "[Rectangle] ({}) {}/{} - {}/{}".format(
+                self.id, self.x, self.y, self.width, self.height
+                )
+
     @property
     def width(self) -> int:
         return self.__width
@@ -31,8 +37,8 @@ class Rectangle(Base):
         return self.__height
 
     @height.setter
-    def (self, height: int):
-        return self.__height
+    def height(self, height: int):
+        self.__height = height
 
     @property
     def x(self) -> int:
