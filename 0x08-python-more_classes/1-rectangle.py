@@ -1,8 +1,10 @@
 #!/usr/bin/python3
 
+"""creating an empty Rectangle class"""
+
 
 class Rectangle:
-    """class of a Rectangle"""
+    """class of a rectangle"""
 
     def __init__(self, width=0, height=0):
         self.width = width
