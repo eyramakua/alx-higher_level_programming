@@ -5,7 +5,7 @@ class for MyList
 
 
 class MyList(list):
-    """MyList class"""
+    "MyList class"""
 
 
 def print_sorted(self):
