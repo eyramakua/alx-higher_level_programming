@@ -13,7 +13,7 @@ module.exports = class Rectangle {
     a = a.repeat(this.height);
     console.log(a.slice(0, -1));
   }
-};
+}
 
   rotate () {
     [this.height, this.width] = [this.width, this.height];
