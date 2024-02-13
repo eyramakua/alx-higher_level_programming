@@ -1,9 +1,10 @@
 #!/usr/bin/node
+
+let c = -1;
 exports.logMe = function (item) {
-  let counter = 0;
-  const clousure = (item) => {
-    console.log('${counter}: ${item}');
-    counter += 1;
-  };
-  return clousure;
-}();
+  function printLog (item) {
+    c++;
+    console.log('${c}:; ${item}');
+  }
+  return printLog(item);
+};
