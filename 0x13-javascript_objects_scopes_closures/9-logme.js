@@ -6,4 +6,4 @@ exports.logMe = function (item) {
     counter += 1;
   };
   return clousure;
-}());
+}();
