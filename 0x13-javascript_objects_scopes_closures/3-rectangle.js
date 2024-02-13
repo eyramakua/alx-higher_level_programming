@@ -1,17 +1,16 @@
 #!/usr/bin/node
-class Rectangle {
-  constructor (weight, height) {
-    if (isNaN(weight) || isNaN(height) || weight <= 0 || height <= 0) {
-	return;
+
+module.exports = class Rectangle {
+  constructor (w, h) {
+    if (w > 0 && h > 0) {
+      this.width = w;
+      this.height = h;
     }
-    this.width = weight;
-    this.height = height;
   }
 
   print () {
-    for (let i = 0; i < this.height; i++) {
-      console.log('X'.repeat(this.width));
-    }
+    let a = 'X'.repeat(this.width) + '\n';
+    a = a.repeat(this.height);
+    console.log(a.slice(0, -1));
   }
-}
-module.exports = Rectangle;
+};
