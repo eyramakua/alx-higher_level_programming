@@ -9,10 +9,10 @@ import sys
 
 if __name__ == '__main__':
     engine = create_engine('mysql+mysqldb://{}:{}@localhost:3306/{}'
-                           .format(Sys.argv[1], sys.argv[2], sys.argv[3]),
+                           .format(sys.argv[1], sys.argv[2], sys.argv[3]),
                            pool_pre_ping=True)
-    Base.metadate.create_all(engine)
-    Sessionmaker = seessionmaker(bind=engine)
+    Base.metadata.create_all(engine)
+    Sessionmaker = sessionmaker(bind=engine)
     session = Sessionmaker()
     for state in session.query(State).order_by(State.id).all():
         print("{}: {}".format(state.id, state.name))
