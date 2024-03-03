@@ -14,7 +14,7 @@ if __name__ == "__main__":
     if "json" not in response.headers.get('content-type'):
         print("Not a valid JSON")
     else:
-        if reponse.json():
+        if response.json():
             print("[{}] {}".format(response.json().get('id'),
                   response.json().get('name')))
         else:
