@@ -12,8 +12,8 @@ request(url, function (error, response, body) {
       array = item.characters;
       array.forEach(function (abc) {
         if (abc.includes('18')) {
-           count = count + 1;
-	}
+          count = count + 1;
+        }
       });
     });
     console.log(count);
